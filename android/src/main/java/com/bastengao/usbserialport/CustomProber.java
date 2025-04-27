@@ -8,7 +8,7 @@ class CustomProber {
 
     static UsbSerialProber getCustomProber() {
         ProbeTable customTable = new ProbeTable();
-        customTable.addProduct(0x248a, 0x8002, CdcAcmSerialDriver.class);
+        customTable.addProduct(0x0483, 0x374E, CdcAcmSerialDriver.class);
         return new UsbSerialProber(customTable);
     }
 
